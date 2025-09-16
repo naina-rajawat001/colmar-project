@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    border-bottom: 2px solid rgb(216, 207, 207);
+}
+/* -------------------header------------------------- */
+
+
+header {
+    width: 100vw;
+    height: 64px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------section-1 hero-banner-------------------- */
+
+
+.hero-banner {
+    width: 100vw;
+    background-color: gainsboro;
+}
+
+
+.hero-banner img {
+    width: 100%;
+}
+
+
+.hero-info {
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner h1 {
+    font-size: 45px;
+}
+
+.hero-banner p {
+    font-size: 20px;
+    margin: 32px 0 24px;
+}
+
+.hero-banner button {
+    border: none;
+    color: aliceblue;
+    background-color: rgb(134, 133, 133);
+    padding: 8px 0;
+    font-size: 20px;
+}
+
+/* ------------------section 2 -------------------- */
+
+.desktop {
+    display: none;
+}
+
+
+.visit img {
+    width: 100%;
+    padding: 16px;
+}
+
+.visit-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.visit-info a {
+    text-decoration: none;
+    color: rgb(2, 108, 194);
+    font-weight: 400;
+}
+
+.visit:hover,
+.research:hover {
+    background-color: rgba(214, 214, 214, 0.8);
+}
+
+/* ----------------------------section-3------------------------------ */
+
+.banner-3 {
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.banner-3 h2,
+.banner-4 h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.specific-stream {
+    padding: 16px;
+    background-color: gainsboro;
+    margin-bottom: 8px;
+}
+
+/* ------------------banner-4------------------------------------ */
+
+
+.banner-4 {
+    margin-top: 24px;
+}
+
+.banner-4 video {
+    width: 100%;
+    margin: 24px 0
+}
+
+
+/* -------------------------------footer----------------- */
+
+footer {
+    text-align: center;
+    padding: 16px 0 32px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.nav {
+    display: none;
+}
+.conditions {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+    .nav {
+        display: inline-flex;
+    }
+
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    header img {
+        height: 45px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    header span {
+        color: rgb(165, 164, 164);
+    }
+
+    header ul,
+    .conditions {
+        display: flex;
+        gap: 20px;
+    }
+
+    header ul li,
+    .conditions li {
+        list-style: none;
+    }
+
+    header ul li a,
+    .conditions li a {
+        text-decoration: none;
+        color: rgb(48, 48, 48);
+        font-weight: 500;
+    }
+
+    /* -----------------section-1---------------- */
+
+    .hero-banner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-banner img {
+        width: 60%;
+        padding: 32px 24px;
+    }
+
+    /* -------------------section-2----------------- */
+
+    .banner-2 {
+        width: 100%;
+        display: flex;
+    }
+
+    .main-img {
+        width: 60%;
+        padding: 32px 24px;
+    }
+
+    .main-img img {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .main-img-info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .college-visit {
+        width: 40%;
+        margin-top: 16px;
+        border-left: 2px solid gainsboro;
+    }
+
+    .visit {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .visit img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .visit-info {
+        width: 65%;
+       justify-content: center;
+    }
+
+    /* -------------------section-3------------------- */
+
+    .banner-3 {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        background-color: rgb(213, 214, 216);
+    }
+
+    .streams {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .stream-name {
+        background-color: white;
+        width: 30%;
+    }
+
+    .stream-name img {
+        width: 100%;
+        height: auto;
+    }
+
+    .specific-stream {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .stream-name h4,
+    .stream-name p,
+    article p {
+        opacity: 0.6;
+    }
+
+    /* ----------------------------section-4---------- */
+
+
+    .banner-4 {
+        padding-top: 32px;
+    }
+
+    article {
+        width: 100%;
+        display: flex;
+    }
+
+    
+    .media {
+        width: 60%; 
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .media video {
+        width: 100%;
+    }
+
+    .city {
+        width: 40%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .research {
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .research img {
+        max-width: 35%;
+        padding: 16px;
+    }
+
+    .research div h4{
+       margin-bottom: 10px;
+    }
+
+    /* --------------------footer----------------- */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 24px;
+    }
+
+
+}
