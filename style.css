@@ -113,11 +113,6 @@ header {
 
 /* ------------------banner-4------------------------------------ */
 
-
-.banner-4 {
-    margin-top: 24px;
-}
-
 .banner-4 video {
     width: 100%;
     margin: 24px 0
@@ -140,8 +135,34 @@ footer {
     display: none;
 }
 
+
+.desktop {
+    display: none;
+}
 @media (min-width: 1024px) {
 
+    body {
+        background-color: #3b3b3b;
+    }
+
+
+    header,
+    footer,
+    main {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    header,
+    footer,
+    .banner-2,
+    .banner-4  {
+        background-color: #fff;
+    }
+
+    .banner-2 .main-img {
+        display: block;
+    }
     .mobile {
         display: none;
     }
